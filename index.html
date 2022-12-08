@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT </title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+</head>
+
+<body>
+
+    <div style="color: black;padding: 5px;text-align: center;">
+        <h1 style="text-shadow: 5px; text-decoration: solid;">
+            TWO WINDING TRANSFORMER TO AUTO-TRANSFORMER
+        </h1>
+    </div>
+
+    <div class="formT backgroundwhite">
+
+        <!-- <div style="color: black;padding: 5px;text-align: center;">
+            <h1 style="text-shadow: 5px; text-decoration: solid;">
+                TWO WINDING TRANSFORMER TO AUTO-TRANSFORMER 
+            </h1>
+        </div> -->
+        <form onsubmit="checkValue()">
+            <label for="input.js"></label>
+
+            <div style="color: black; font-style: oblique; font-weight: bold;">
+                PRIMARY SIDE VOLTAGE : <input type="number" min="1" name="myVoltageP" id="volP" required>
+            </div>
+
+            <!-- <div  style="color: black; font-style: oblique; font-weight: bold;">
+            NUMBER OF TURNS ON PRIMARY SIDE : <input type="number" min="1" name="turnP" id="turnP">
+        </div> -->
+
+            <div style="color: black; font-style: oblique; font-weight: bold;">
+                SECONDARY SIDE VOLTAGE : <input type="number" min="1" name="myVoltageS" id="volS" required>
+            </div>
+            <div style="color: black; font-style: oblique; font-weight: bold;">
+                KVA RATING OF TWO WINDING TRANSFORMER : <input type="number" min="1" name="kva" id="kva" required>
+            </div>
+
+            <!-- <div style="color: black; font-style: oblique; font-weight: bold;">
+            NUMBER OF TURNS ON SECONDARY SIDE : <input type="number" min="1"  name="turnS" id="turnS">
+        </div> -->
+
+            <div style="color: black; font-style: oblique; font-weight: bold;" onchange="setVoltageField()">
+                SELECT A POLARITY : <select name="polarity" id="polarity" required>
+                    <option value="">SELECT</option>
+                    <option value="additive">1. SERIES ADDITIVE POLARITY</option>
+                    <option value="subtractive">2. SERIES SUBTRACTIVE POLARITY</option>
+                </select>
+            </div>
+            <div id="voltageFinal" style="color: black; font-style: oblique; font-weight: bold;display:none;">
+                Select a Voltage for Ip/Io in Auto Transformer : <select name="voltage" id="voltage" required>
+                    <option value="">SELECT</option>
+                    <option value="vp">1. Primary Voltage</option>
+                    <option value="vs">2. Secondary Voltage</option>
+                </select>
+            </div>
+            <div style="color: black; font-style: oblique; font-weight: bold;border-color: aqua;">
+                Select According to Requirement : <select name="side" id="side" required>
+                    <option value="">SELECT</option>
+                    <option value="hv">1. STEP UP </option>
+                    <option value="lv">2. STEP DOWN </option>
+                </select>
+            </div>
+
+            <div
+                style="text-align:center; padding: 5px; border-radius: 4px; font-weight: bolder;font-size: larger; font-style: oblique;">
+                <input type="submit" style="color: black; font-weight: bold;border-color:black;padding : 5px;;"
+                    value="SUBMIT">
+            </div>
+
+
+        </form>
+
+    </div>
+    <div id="result">
+
+    </div>
+<script src="./script.js" type="text/javascript" ></script>
+</body>
+
+</html>

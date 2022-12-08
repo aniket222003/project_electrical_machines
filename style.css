@@ -1,0 +1,51 @@
+body{
+
+    background-image: url('transformer.jpg');
+    background-position: fixed;
+    background-size: cover;
+}
+
+*{
+    text-transform: capitalize;
+
+}
+
+.formT{
+    /* text-align: center;
+    vertical-align: middle; */
+    left      : 50%;
+    top       : 50%;
+    position  : absolute;
+    transform : translate(-50%, -50%);
+
+}
+.backgroundwhite{
+    background-color: whitesmoke;
+}
+
+form{
+    padding: 10px;
+}
+#vp{
+    color: black;
+    background-color: aqua;
+}
+select,input[type="number"]{
+    border-radius: 4px;
+    border-color: rgb(9, 211, 211);
+    color : black;
+    padding: 5px;
+    margin: 5px;
+}
+
+.resultdiv{
+    width: 50%;
+    margin: auto;
+    height:50vh;
+    color: black;
+    border-radius: 4px;
+    margin: auto;
+    padding: 20px;
+    line-height: 30px;
+    font-weight: 600;
+}
